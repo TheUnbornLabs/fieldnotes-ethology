@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Fieldnotes in Ethology</title>
+<meta name="description" content="About the Fieldnotes in Ethology project: mission, scope, and editorial process.">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html">Fieldnotes in Ethology</a>
+    <nav class="site-nav">
+      <a href="../index.html">Home</a>
+      <a href="../animals/index.html">Animals</a>
+      <a href="../birds/index.html">Birds</a>
+      <a href="../glossary/index.html">Glossary</a>
+      <a href="../quizzes/index.html">Quizzes</a>
+      <a href="../about/index.html" class="active">About</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<div class="wrap about-page">
+  <h1>About This Project</h1>
+  <h2>100 Ethology Books: 50 Animals + 50 Birds</h2>
+<p>A structured, publication-ready document library of 100 educational books about animal and bird behavior (ethology). Each book is written for students, teachers, animal lovers, and general readers who want compact, scientifically grounded public science education — not a children's encyclopedia and not academic jargon.</p>
+<h3>What this repository is</h3>
+<p>This is a <strong>document preparation repository</strong>, not a website. All content is authored in Markdown and organized into numbered folders. A later stage (handled separately by Claude Code) will convert this material into a static GitHub Pages website. Until then, the goal is to write, organize, quality-check, and store the documents correctly.</p>
+<h3>Repository layout</h3>
+<p>100-ethology-books-documents/ │ │   └── NNN-slug/ { book.md, summary.md, glossary.md, quiz.md, references.md } │   └── NNN-slug/ { book.md, summary.md, glossary.md, quiz.md, references.md } │</p>
+<h3>The five files in every species folder</h3>
+<h3>Production method</h3>
+<p>Work proceeds in <strong>batches of five books</strong>. After each batch, the author writes a batch note (<code>batch-notes/</code>) and updates <code>batch-progress-tracker.md</code>. Batch 1 covers books 001–005 (Wolf, African Elephant, Chimpanzee, Bonobo, Gorilla).</p>
+<h3>Non-negotiable rules</h3>
+<li>1. Write real content, not placeholders or descriptions of content.</li>
+<li>2. Never invent citations. Uncertain sources are flagged: <em>"Further reading to verify before final publication."</em></li>
+<li>3. Keep writing species-specific — avoid generic paragraphs recycled across books.</li>
+<li>4. Correct myths calmly and scientifically; never mock readers.</li>
+<li>5. Preserve folder numbering and filenames exactly (the website stage depends on them).</li>
+<h3>Status</h3>
+<p>Batch 1 (books 001–005) drafted. See <code>batch-progress-tracker.md</code> for the live status of all 100 books.</p>
+  <hr>
+  <h2>Project Blueprint — 100 Ethology Books</h2>
+<h3>1. Mission</h3>
+<p>Produce 100 structured educational books about animal and bird behavior. The collection should give a curious reader a genuine grounding in ethology — the scientific study of behavior — through 100 well-chosen species, half mammals-and-other-animals, half birds.</p>
+<p>The material must serve four audiences at once:</p>
+<li>- <strong>Students</strong> who need clear, accurate, exam-useful explanations.</li>
+<li>- <strong>Teachers</strong> who need ready-made lessons, glossaries, and quizzes.</li>
+<li>- <strong>Animal lovers</strong> who want depth beyond popular myths.</li>
+<li>- <strong>General readers</strong> who want compact science, not sentimentality.</li>
+<h3>2. Editorial voice</h3>
+<p>Write like a working ethologist explaining a species to an intelligent non-specialist. Serious, clear, public-friendly, and specific. Every claim should be the kind a field biologist or behavioral ecologist would accept. Avoid filler, motivational language, forced moral lessons, and heavy anthropomorphism. Use animal cognition and behavior terminology accurately, and define it in the glossary.</p>
+<h3>3. Scope and structure</h3>
+<li>- <strong>100 books total</strong>: 50 in <code>animals/</code> (001–050), 50 in <code>birds/</code> (051–100).</li>
+<li>- Each book follows the fixed 20-section structure in <code>writing-template.md</code>.</li>
+<li>- Each book ships with five files (book, summary, glossary, quiz, references).</li>
+<li>- Folder names are zero-padded and slugged: <code>001-wolf</code>, <code>051-common-raven</code>.</li>
+<h3>4. Coverage goals</h3>
+<p>The animal set deliberately spans taxonomic and ecological diversity: mammals, reptiles, amphibians, fish, insects, arachnids, crustaceans and marine invertebrates; predators and prey; solitary and social; wild and domesticated; celebrated and neglected species. The bird set spans corvids, raptors, parrots, pigeons/doves, waterfowl, seabirds, songbirds, flightless birds, migratory and urban birds, nocturnal birds, colonial nesters, tool-users, and species with remarkable courtship or parenting. See <code>species-master-list.md</code>.</p>
+<h3>5. Production workflow</h3>
+<li>1. <strong>Batch selection</strong> — take the next five species in numeric order.</li>
+<li>2. <strong>Drafting</strong> — for each species, create the folder and write all five files against the template.</li>
+<li>3. <strong>Self-QC</strong> — run every file against <code>quality-checklist.md</code>.</li>
+<li>4. <strong>Batch note</strong> — record completed books, scientific names, ethology focus, citations needing verification, and weak sections.</li>
+<li>5. <strong>Tracker update</strong> — update <code>batch-progress-tracker.md</code>.</li>
+<li>6. <strong>Repeat</strong> for the next batch.</li>
+<p>Twenty batches of five books complete the collection.</p>
+<h3>6. Sourcing standard</h3>
+<p>Governed by <code>citation-policy.md</code>. Acceptable sources: peer-reviewed papers, university and museum sources, conservation organizations, government wildlife agencies, reputable field guides, and standard animal-behavior textbooks. No invented citations. Anything uncertain is explicitly flagged for verification before publication.</p>
+<h3>7. Quality bar</h3>
+<p>A book passes only when it is accurate, species-specific, appropriately sourced, complete across all 20 sections and five files, within length targets, and free of the failure modes listed in <code>quality-checklist.md</code> (generic AI phrasing, repetition, fake citations, overclaiming, moralizing).</p>
+<h3>8. Downstream use</h3>
+<p>This repository feeds a later static-website build. Content is authored so that summaries become homepage cards, glossaries feed a master glossary, quizzes feed a quiz index, and references feed citation sections. See <code>future-website-handoff/</code>. The website stage must not rewrite scientific content unless explicitly asked, and must preserve numbering and filenames.</p>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Fieldnotes in Ethology — 100 species, editorially reviewed and citation-checked. Source and full citation notes on <a href="https://github.com/TheUnbornLabs/fieldnotes-ethology">GitHub</a>.</p>
+  </div>
+</footer>
+<script src="../assets/site.js"></script>
+</body>
+</html>
