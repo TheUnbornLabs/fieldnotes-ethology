@@ -1,0 +1,13 @@
+# Summary — The Spotted Hyena (*Crocuta crocuta*)
+
+The spotted hyena is one of the most misunderstood large mammals in Africa. Popular culture paints it as a cowardly, dog-like scavenger with a mad laugh, but field research reveals an intelligent, highly social predator living in large, female-dominated societies. It is one of ethology's most valuable "misread" species because almost every popular belief about it is either wrong or backwards.
+
+Taxonomically, the hyena is not a dog. It belongs to the family Hyaenidae within Feliformia, the cat-like carnivorans, making it a closer relative of cats, mongooses, and civets than of canids; its doglike look is convergent evolution. Spotted hyenas range across much of sub-Saharan Africa in savanna, woodland, and semi-desert, and the IUCN lists the species as Least Concern, though many local populations are declining and persecuted.
+
+Hyena society is built on the clan — a stable group of a few to more than a hundred individuals, organised by a strict linear hierarchy that is strongly matriarchal. Adult females outrank adult males, are on average larger, and pass their social rank down the female line, so a cub inherits a position just below its mother's. Males disperse and join new clans at the bottom of the male order, advancing largely by seniority and relationship-building rather than fighting. Clans live in a fission-fusion pattern, splitting into subgroups to hunt, patrol, and rest, then merging again.
+
+Contrary to the scavenger myth, spotted hyenas hunt most of their food, taking ungulates through cooperative endurance chases. Powerful bone-cracking jaws and a bone-digesting gut let them use nearly the whole carcass. With lions, their chief rival, they share a two-way kleptoparasitic relationship — each robs and kills the other depending on numbers.
+
+The species is famous for its masculinised females. The clitoris is enlarged into a "pseudo-penis," through which the female urinates, mates, and gives birth, and the labia are fused; these result from prenatal hormone exposure. The female is not a hermaphrodite. This anatomy makes first births difficult and dangerous — a clear evolutionary trade-off tied to female dominance.
+
+Hyenas communicate through a rich vocal repertoire, including the long-distance "whoop" and the "giggle," a stress and excitement signal rather than laughter of happiness. They also use scent-paste and communal latrines. On cooperation and social-reasoning tasks, hyenas rival some primates, supporting the idea that complex societies drive the evolution of intelligence. Their conservation challenge is as much about correcting harmful folklore as about protecting habitat.
