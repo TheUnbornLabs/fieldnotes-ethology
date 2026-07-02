@@ -2,9 +2,11 @@
 
 A structured, publication-ready document library of 100 educational books about animal and bird behavior (ethology). Each book is written for students, teachers, animal lovers, and general readers who want compact, scientifically grounded public science education — not a children's encyclopedia and not academic jargon.
 
+**Live site:** https://theunbornlabs.github.io/fieldnotes-ethology/
+
 ## What this repository is
 
-This is a **document preparation repository**, not a website. All content is authored in Markdown and organized into numbered folders. A later stage (handled separately by Claude Code) will convert this material into a static GitHub Pages website. Until then, the goal is to write, organize, quality-check, and store the documents correctly.
+This is a **document preparation repository** for the source content, plus the generated static website. All book content is authored in Markdown and organized into numbered folders (`animals/`, `birds/`); `scripts/build_site.py` converts it into the static site published from `docs/` via GitHub Pages. To rebuild the site after editing content, run `python scripts/build_site.py` from the repo root.
 
 ## Repository layout
 
