@@ -433,9 +433,27 @@ def page_shell(base, title, description, body_html, active=None, extra_head=""):
 """
 
 
+def image_credit_html(image):
+    if not image:
+        return ""
+    return (
+        '<p class="img-credit">'
+        f'Photo: {esc(image["artist"])} '
+        f'(<a href="{esc(image["pageUrl"])}">{esc(image["license"])}</a>, via Wikimedia Commons)'
+        "</p>"
+    )
+
+
 def card_html(base, rec, depth_prefix=""):
     href = f"{base}{rec['category']}s/{rec['slug']}/index.html"
+    img = rec.get("image")
+    media_html = (
+        f'<div class="card-media"><img src="{esc(img["thumbUrl"])}" alt="{esc(rec["commonName"])}" loading="lazy" decoding="async"></div>'
+        if img else ""
+    )
     return f"""<a class="card" href="{href}">
+  {media_html}
+  <div class="card-body">
   <div class="card-top">
     {category_badge(rec['category'])}
     <span class="card-num">{rec['number']:03d}</span>
@@ -445,6 +463,7 @@ def card_html(base, rec, depth_prefix=""):
   <p class="hook">{esc(rec['hook'])}</p>
   <p class="teaser">{esc(rec['teaser'])}</p>
   <span class="card-cta">Read the book {icon('chevron-right')}</span>
+  </div>
 </a>"""
 
 
@@ -452,8 +471,16 @@ def card_html(base, rec, depth_prefix=""):
 # Build
 # ---------------------------------------------------------------------------
 
+def load_image_credits():
+    path = ROOT / "image-credits.json"
+    if not path.exists():
+        return {}
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
 def load_species():
     master = parse_master_list()
+    image_credits = load_image_credits()
     species = []
     for cat_dir, category in (("animals", "animal"), ("birds", "bird")):
         for folder in sorted((ROOT / cat_dir).iterdir()):
@@ -496,6 +523,7 @@ def load_species():
                 "references": references,
                 "sections": sections,
                 "referencesNeedVerification": references["needsVerification"],
+                "image": image_credits.get(folder.name),
             })
     species.sort(key=lambda r: r["number"])
     return species
@@ -534,9 +562,19 @@ def render_species_page(rec):
 
     sci_html = inline_md(f"*{rec['scientificName']}*") if rec["scientificName"] and not rec["scientificName"].startswith("*") else inline_md(rec["scientificName"])
 
+    img = rec.get("image")
+    hero_media_html = (
+        f'''<div class="species-hero-media">
+          <img src="{esc(img["thumbUrl"])}" alt="{esc(rec['commonName'])}" loading="eager" decoding="async">
+          {image_credit_html(img)}
+        </div>'''
+        if img else ""
+    )
+
     body = f"""
 <header class="species-hero cat-{rec['category']}">
-  <div class="wrap">
+  <div class="wrap species-hero-grid">
+    <div class="species-hero-text">
     <nav class="breadcrumb">
       <a href="{base}index.html">Home</a>{icon('chevron-right')}<a href="{base}{rec['category']}s/index.html">{rec['category'].capitalize()}s</a>{icon('chevron-right')}<span>{esc(rec['commonName'])}</span>
     </nav>
@@ -548,6 +586,8 @@ def render_species_page(rec):
     <h1>{esc(rec['bookTitle'])}</h1>
     <p class="sci">{sci_html}</p>
     <p class="hook">{esc(rec['hook'])}</p>
+    </div>
+    {hero_media_html}
   </div>
 </header>
 
@@ -877,8 +917,12 @@ h3{font-size:1.2rem;margin-top:1.6em}
 
 /* Cards */
 .card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;margin:28px 0}
-.card{display:flex;flex-direction:column;background:var(--bg-raised);border:1px solid var(--border);border-radius:var(--radius);padding:20px 22px;text-decoration:none;color:var(--text);transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease}
+.card{display:flex;flex-direction:column;background:var(--bg-raised);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;text-decoration:none;color:var(--text);transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease}
 .card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:transparent}
+.card:hover .card-media img{transform:scale(1.05)}
+.card-media{aspect-ratio:4/3;overflow:hidden;background:var(--bg-alt)}
+.card-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s ease}
+.card-body{padding:18px 22px 20px;display:flex;flex-direction:column;flex:1}
 .card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
 .cat-badge{display:inline-flex;align-items:center;gap:5px;font-family:var(--font-ui);font-size:.72rem;font-weight:600;padding:3px 9px;border-radius:20px}
 .cat-badge.cat-animal{background:var(--accent-soft);color:var(--accent-dark)}
@@ -915,6 +959,11 @@ h3{font-size:1.2rem;margin-top:1.6em}
 .species-hero h1{font-size:2.4rem;margin:0 0 8px;max-width:22ch}
 .species-hero .sci{font-style:italic;font-size:1.15rem;color:var(--text-muted);font-family:var(--font-ui);margin:0 0 6px}
 .species-hero .hook{font-family:var(--font-ui);color:var(--accent-dark);font-weight:600;margin:0}
+.species-hero-grid{display:grid;grid-template-columns:1fr 340px;gap:40px;align-items:center}
+.species-hero-media img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius);box-shadow:var(--shadow-lg);display:block}
+.img-credit{font-family:var(--font-ui);font-size:.72rem;color:var(--text-muted);margin:8px 2px 0}
+.img-credit a{color:var(--text-muted)}
+.img-credit a:hover{color:var(--accent-dark)}
 
 /* Species layout / TOC */
 .species-layout{display:grid;grid-template-columns:250px 1fr;gap:44px;margin:36px 0 70px;align-items:start}
@@ -1016,6 +1065,9 @@ pre{background:var(--bg-alt);border-radius:var(--radius-sm);padding:14px;overflo
   .footer-grid{grid-template-columns:1fr;gap:24px}
   .hero h1{font-size:2.4rem}
   h1{font-size:2.1rem}
+  .species-hero-grid{grid-template-columns:1fr;gap:20px}
+  .species-hero-media{order:-1}
+  .species-hero-media img{aspect-ratio:16/9}
 }
 @media (max-width: 620px){
   body{font-size:16.5px}
