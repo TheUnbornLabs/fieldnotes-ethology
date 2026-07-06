@@ -1,56 +1,15 @@
-# 100 Ethology Books: 50 Animals + 50 Birds
+# Fieldnotes in Ethology
 
-A structured, publication-ready document library of 100 educational books about animal and bird behavior (ethology). Each book is written for students, teachers, animal lovers, and general readers who want compact, scientifically grounded public science education — not a children's encyclopedia and not academic jargon.
+Compact, scientifically grounded educational books on animal and bird behaviour — written for students, teachers, and curious general readers. Not a children's encyclopedia, not academic jargon.
 
-**Live site:** https://theunbornlabs.github.io/fieldnotes-ethology/
+**Read online:** https://theunbornlabs.github.io/fieldnotes-ethology/
 
-## What this repository is
+## Layout
 
-This is a **document preparation repository** for the source content, plus the generated static website. All book content is authored in Markdown and organized into numbered folders (`animals/`, `birds/`); `scripts/build_site.py` converts it into the static site published from `docs/` via GitHub Pages. To rebuild the site after editing content, run `python scripts/build_site.py` from the repo root.
+- `animals/` — books 001–050, one folder per species
+- `birds/` — books 051–100, one folder per species
+- `docs/` — the generated static reading site (published via GitHub Pages)
 
-## Repository layout
+Each species folder contains `book.md`, `summary.md`, `glossary.md`, `quiz.md`, and `references.md`.
 
-```text
-100-ethology-books-documents/
-├── README.md                     ← you are here
-├── project-blueprint.md          ← full editorial and production plan
-├── species-master-list.md        ← the confirmed 100-species list (001–100)
-├── writing-template.md           ← the exact 20-section book structure
-├── citation-policy.md            ← rules for honest, verifiable sourcing
-├── quality-checklist.md          ← pre-publication QC gate for every book
-├── batch-progress-tracker.md     ← live status table for all 100 books
-│
-├── animals/                      ← books 001–050 (one folder each)
-│   └── NNN-slug/ { book.md, summary.md, glossary.md, quiz.md, references.md }
-├── birds/                        ← books 051–100 (one folder each)
-│   └── NNN-slug/ { book.md, summary.md, glossary.md, quiz.md, references.md }
-│
-├── batch-notes/                  ← one note per 5-book batch (01–20)
-└── future-website-handoff/       ← instructions for the website build stage
-```
-
-## The five files in every species folder
-
-| File | Purpose | Target size |
-|---|---|---|
-| `book.md` | Full 20-section educational book | 2,500–5,000 words |
-| `summary.md` | Standalone short overview | 300–500 words |
-| `glossary.md` | Key behavioral/biological terms | 10–20 terms |
-| `quiz.md` | Multiple-choice quiz + answer key | 10 questions |
-| `references.md` | Real sources or flagged suggestions | credible sources only |
-
-## Production method
-
-Work proceeds in **batches of five books**. After each batch, the author writes a batch note (`batch-notes/`) and updates `batch-progress-tracker.md`. Batch 1 covers books 001–005 (Wolf, African Elephant, Chimpanzee, Bonobo, Gorilla).
-
-## Non-negotiable rules
-
-1. Write real content, not placeholders or descriptions of content.
-2. Never invent citations. Uncertain sources are flagged: *"Further reading to verify before final publication."*
-3. Keep writing species-specific — avoid generic paragraphs recycled across books.
-4. Correct myths calmly and scientifically; never mock readers.
-5. Preserve folder numbering and filenames exactly (the website stage depends on them).
-
-## Status
-
-Batch 1 (books 001–005) drafted. See `batch-progress-tracker.md` for the live status of all 100 books.
+Image attributions are in `image-credits.json`.
