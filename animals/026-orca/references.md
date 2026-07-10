@@ -26,3 +26,7 @@ Per the collection's citation policy: no citations are invented. Entries are spl
 - Specific figures for lifespan, gestation, body length, and calving interval in named populations — *Further reading to verify before final publication.*
 - Specific studies on PCB bioaccumulation and its effects on orca health and reproduction — *Further reading to verify before final publication.*
 - Population-specific assessments for the endangered Southern Resident killer whales (prey decline, contaminants, vessel noise) — *Further reading to verify before final publication.*
+
+**Recent research (verified 2026-07-09)**
+
+- **Kelp-tool grooming / "allokelping" (2025):** *"Manufacture and use of allogrooming tools by wild killer whales,"* **Current Biology** (published 23 June 2025; article ref. S0960-9822(25)00450-6) — source located and confirmed on 2026-07-09. Drone observations of Southern Resident killer whales in the Salish Sea documented roughly 30 cases (over ~2 weeks in 2024) of whales detaching a piece of bull kelp and rolling it between their bodies during social grooming, mostly between close kin or age-mates. First documented case of tool manufacture-and-use for allogrooming in this population.

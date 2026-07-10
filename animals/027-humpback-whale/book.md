@@ -86,6 +86,10 @@ The humpback's relationship with humans is a story of near-destruction followed 
 
 Today humpbacks are central to whale-watching economies worldwide, generating public interest and revenue that support conservation. They are also cultural icons, their song embedded in music and environmental campaigns. Yet significant threats remain: entanglement in fishing lines, collisions with ships, chemical and noise pollution, and the shifting distribution of prey under climate change. The recovery is real but not complete, and it depends on continued management.
 
+## Recent Research (2024–2026)
+
+A 2026 paper in *Royal Society Open Science* documented what is, on the evidence available, the longest movement recorded for an individual humpback whale. By matching individually distinctive tail-fluke photographs from a catalogue of more than nineteen thousand images gathered between 1984 and 2025, researchers identified two whales that had travelled between breeding areas off eastern Australia and off Brazil — a straight-line separation of well over fourteen thousand kilometres, with one animal's documented journey exceeding fifteen thousand. These were the first recorded exchanges in both directions between the two populations. The whales represented a tiny fraction — around one in ten thousand — of the individuals catalogued, and the long gaps between sightings (six and twenty-two years) suggest such crossings are exceptional, perhaps once-in-a-lifetime events rather than a shift in normal migratory routes. Even so, the record hints at a flexibility in humpback movement and navigation that ordinary migration data would not reveal, and it showcases the value of long-term photo-identification archives for catching rare behaviour.
+
 ## 14. Common Myths vs Scientific Reality
 
 Myth 1: We know exactly what whale song is "for."

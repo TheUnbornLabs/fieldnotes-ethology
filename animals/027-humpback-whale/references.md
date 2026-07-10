@@ -20,3 +20,7 @@ Following the collection's citation policy, sources are separated into those saf
 
 - Specific peer-reviewed papers on humpback song structure, song revolutions, lobtail feeding transmission, and humpback-orca interactions should be located and cited with full author, title, journal, year, and DOI before final publication. Further reading to verify before final publication.
 - Peer-reviewed literature on humpback migration distances, breeding-ground behavior, and cognition. Further reading to verify before final publication.
+
+## Recent research (verified 2026-07-09)
+
+- **Record long-distance movement (2026):** *"…"* in **Royal Society Open Science** 2026; 13(5), doi:10.1098/rsos.260251 — source located and confirmed on 2026-07-09 (exact article title to be transcribed from the DOI before final publication). Using photo-identification of tail flukes (a catalogue of 19,283 images, 1984–2025), the study identified two humpbacks that moved between breeding grounds off eastern Australia and off Brazil — separations exceeding 14,000 km, with one documented journey over 15,000 km, the longest recorded for an individual humpback. These were the first two-way exchanges between the populations; long re-sighting intervals (6 and 22 years) suggest such crossings are exceptional rather than routine.

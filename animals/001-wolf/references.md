@@ -30,3 +30,9 @@ Each of the following should be checked against a database (PubMed, Google Schol
 - Research on wolf dispersal distances and pack formation — *Further reading to verify before final publication.*
 - Studies quantifying the Yellowstone trophic cascade and the debate over its magnitude and confounding factors (climate, drought, other predators, human hunting, beaver recovery) — *Further reading to verify before final publication.*
 - Region-specific conservation and management assessments for wolf populations outside the global Least Concern picture — *Further reading to verify before final publication.*
+
+## Recent research (verified 2026-07-09)
+
+The following recent study was checked against the live web on 2026-07-09 and its source located:
+
+- **Raven–wolf scavenging (2026):** Loretto, Marzluff, and colleagues, *"Ravens anticipate wolf kill sites across broad scales,"* **Science** (published 12 March 2026; doi:10.1126/science.adz9467) — confirmed via science.org and the University of Washington news release (12 March 2026). Roughly 69 GPS-tagged ravens and 20 satellite-collared wolves were followed in the Greater Yellowstone area for about 2.5 years. Sustained following of wolves was almost absent (one prolonged case); ravens instead used spatial memory of productive kill areas, appeared at ~50% of observed kills within seven days, and sometimes flew >150 km in a day. Relevant to the wolf's role as a keystone carcass provider and to wolf–scavenger dynamics.

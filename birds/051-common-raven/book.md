@@ -76,6 +76,10 @@ Few wild birds have as long and layered a relationship with humans as the raven.
 
 Culturally, the raven looms large. It appears as a creator, trickster, and messenger in mythologies across the Northern Hemisphere, from the Pacific Northwest to Norse tradition, where Odin's ravens Huginn and Muninn — "thought" and "memory" — survey the world and report back. The birds are famous residents of the Tower of London, kept under legend that the kingdom will fall if they leave. This cultural richness shows how deeply the raven has impressed human observers — but, as the next section stresses, symbolic meaning is a fact about human culture, not about raven biology.
 
+## Recent Research (2024–2026)
+
+The raven's reputation for planning gained a striking field dimension in 2026, when a study in *Science* (Loretto, Marzluff, and colleagues) tested how scavenging ravens actually find wolf kills in Yellowstone. Over roughly two and a half years the team tracked 69 GPS-tagged ravens alongside 20 satellite-collared wolves. The long-standing assumption was that ravens simply follow hunting wolves to their prey; the data told a different story. Sustained following was almost absent — just one prolonged instance across the whole study. Instead the ravens behaved like informed foragers working from memory: they learned which parts of the landscape yielded wolf kills most reliably and returned to those areas, appearing at nearly half of observed kills within a week and occasionally covering more than 150 kilometres in a single day to reach promising ground. The finding fits the wider picture of corvid cognition built up in the laboratory — flexible planning, spatial memory, sensitivity to what pays off — and shows it operating at landscape scale in the wild. It also gently corrects a piece of received wisdom: the raven at the wolf kill is not a passive camp-follower but an animal exploiting a remembered map of where meat tends to appear.
+
 ## 14. Common Myths vs Scientific Reality
 
 Myth 1: Ravens are omens or harbingers of death.

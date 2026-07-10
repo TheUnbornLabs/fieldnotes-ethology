@@ -25,3 +25,8 @@ Sources are separated into well-established works safe to name and specific clai
 - Specific studies on comprehension of artificial gestural/acoustic "languages" in dolphins — *Further reading to verify before final publication.*
 - Specific literature on infanticide and male sexual coercion in *Tursiops* — *Further reading to verify before final publication.*
 - Comparative orca (killer whale) culture and matriline research — resident killer whale social structure and vocal dialects — *Further reading to verify before final publication.*
+
+## Recent research (verified 2026-07-09)
+
+- **Efficiency laws in click communication (2025):** a 2025 analysis (reported in **Algorithms** 2025, 18(7):392) found that bottlenose dolphin click repertoires follow statistical regularities characteristic of efficient human communication — Zipf's rank–frequency law, the law of brevity, and the Menzerath–Altmann law. Source located 2026-07-09; confirm full author/title against the DOI before final publication.
+- **Shared non-signature whistles (2025), preliminary:** a Woods Hole Oceanographic Institution team studying the long-monitored Sarasota (Florida) population reported evidence that dolphins share certain *non-signature* whistles that may carry consistent, meaning-like functions (e.g. alarm, enquiry) across individuals. **Reported ahead of full peer review and press-announced (May 2025); treat as a promising lead, not a verified result.** Primary peer-reviewed citation to be located before final publication.

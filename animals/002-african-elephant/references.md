@@ -26,3 +26,7 @@ The following were checked against the live web on 2026-07-02 and confirmed:
 - Studies on mirror self-recognition in elephants (reported in Asian elephants; small samples). *Further reading to verify before final publication.*
 - Research on elephant responses to dead conspecifics. *Further reading to verify before final publication.*
 - Studies on elephant discrimination among human groups by threat level. *Further reading to verify before final publication.*
+
+## Recent research (verified 2026-07-09)
+
+- **Name-like calls (2024):** Pardo and colleagues, *"African elephants address one another with individually specific name-like calls,"* **Nature Ecology & Evolution** (2024; PubMed 38858512) — source located and confirmed on 2026-07-09. Reports evidence that wild savanna elephants use vocal labels that appear to identify a specific receiver *without* imitating that individual's own call (i.e. arbitrary, name-like labels), with playback tests showing stronger responses to calls originally addressed to the listener. A striking but single result that warrants replication before being treated as settled.
